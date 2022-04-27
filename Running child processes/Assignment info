@@ -1,0 +1,9 @@
+Write a program that called 'loopcmp' that its implementation will not be limited in the number of comparison methods without the need to re-compile the program, 
+The recieved comparison methods should be provided by the user (must provide an appropriate comparison execuatable).
+The main loop of the program will perform the following actions:
+1.Reading a pair of strings from stdin
+2. When the standard input has reached the EOF, exit the loop.
+3. Create a child process by executing the syscall 'fork'.
+4. The child process should call the syscall 'execve' or 'execvp' for running the relevant comparison program.
+B. The parent process must wait for the comparison to be completed by the child process, and the result of the comparison should be extracted by using the
+macro WEXITSTATUS.
