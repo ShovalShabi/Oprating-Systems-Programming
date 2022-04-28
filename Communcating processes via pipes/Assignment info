@@ -1,4 +1,4 @@
-Write a program that called 'nicecmp', the program should be use the executable 'loopcmp' which make comparision between two strings with one kind of comparing
+Write a program that called 'nicecmp', the program should use the executable 'loopcmp' which make comparision between two strings with one kind of comparing
 method (lexicographic or by length).
 Pay attention that you must use at most twice in the syscall 'fork' and at most four times for the syscall 'pipe' system.
 **There is a recommandation to use the syscall 'dup2'**.
