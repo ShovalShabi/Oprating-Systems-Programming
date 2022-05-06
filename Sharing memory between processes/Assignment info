@@ -1,1 +1,12 @@
-
+Write a program that called primecount, the program will get a range of numbers (the default is the 1 to 100) and prints how many prime numbers are in the range.
+Set the following options for user selection:
+-u:upper value range.
+-l:lower value range.
+-n:maximum numbers to print that found in the range (g.e - if the range is 1 to 100 and the value of n is 5 then the program will print that there are 25 prime numbers,
+but only five prime numbers must be printed (2,3,5,7,11) and not all of them.
+-p:number of processes (not include the parent processes).
+The procedure for finding prime numbers will be performed by several processes simultaneously or in parallel while sharing memory (array or any pointer), and the processes
+will get distinct numbers to check g.e the parent process will wait untill the child processes will find every number that is in the range [l,u] the first process will,
+start from l and will check any number by offset of p (which symbols the numbers of processes) so by that it will check the numbers: l, l+p, l+2p, l+3p..., same as the
+first processes the second process will search for the numbers l+1,l+2p+1,l+3p+1..., and so on to every other process.
+The parent process should only print the amount of the total prime numbers that the child processes found, and the actual numbers.
