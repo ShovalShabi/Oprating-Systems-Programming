@@ -1,1 +1,10 @@
-
+Write a program that called primecount, the program will get a range of numbers (the default is the 1 to 100) and prints how many prime numbers are in the range.
+Set the following options for user selection:
+-u:upper value range.
+-l:lower value range.
+-n:maximum numbers to print that found in the range (g.e - if the range is 1 to 100 and the value of n is 5 then the program will print that there are 25 prime numbers,
+but only five prime numbers must be printed (2,3,5,7,11) and not all of them.
+-t:number of threads.
+The procedure for finding prime numbers will be performed by several threads simultaneously or in parallel while maintaining the critical section safe from overloading
+access by threads, there is no distinction for specific numbers that each thread can chack, each theard can  check any number.
+The main thread will print out the amount of the total prime numbers that found by the other threads and will print them.
