@@ -8,7 +8,6 @@
 #include <sys/wait.h>
 #include <sys/mman.h>
 
-//Presenter:Shoval Shabi, ID:208383885
 
 void parseargs(char *argv[], int argc, int *lval, int *uval,int *nval, int *pval);
 int isprime(int n); 
