@@ -25,7 +25,6 @@ char *flagarr = NULL;
 int *primes = NULL;
 int count = 0;
 
-//Presenter:Shoval Shabi, ID:208383885
 
 int main (int argc, char **argv)
 {
